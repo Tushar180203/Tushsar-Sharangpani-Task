@@ -114,8 +114,8 @@
     margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 0px;
-   width: 300px;
-    height: 300px;
+   width: 332px;
+    height: 332px;
 }
 
 .cards img{
@@ -178,6 +178,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
     
 }
 #browse h1{
@@ -218,3 +219,171 @@
    border-radius: 0px 0px 10px 10px;
     
 }
+#lastest-container{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(2,1fr);
+
+}
+.cardslatest img{
+   
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+}
+.cardslatest{
+   
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+   width: 300px;
+    height: 370px;
+}
+
+#the-latest{
+    margin: 30px;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#latest-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(142, 180, 103);
+    
+    text-decoration: none;
+}
+#latest-heading h1{
+    font-size: 3rem;
+}
+#latest-heading a{
+    color: rgb(0, 0, 0);
+   
+    padding: 10px;
+}
+
+
+.cardslatest p{
+    color: rgb(165, 207, 49);
+    font-size: 1.5rem;
+    font-weight: 3rem;
+    
+  
+}
+
+#search-recipes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d39b;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    height: 200px;
+    padding: 50px;
+}
+#containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#searchbar input{
+    position: relative;
+    left:5px;
+    height: 50px;
+    width: 70%;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+#searchbar button{
+   
+   background-color: rgb(200, 236, 101);
+    height: 50px;
+    width: 29%;
+    border-radius: 0px 10px 10px  0px;
+
+}
+#searchbar{
+    height: 50px;
+   width: 700px;
+  
+    
+}
+
+#containers h6{
+    font-size: 1.1rem;
+    color: gray;
+   
+}
+#containers h1{
+    font-size: 3rem;
+
+   
+}
+#containers h3{
+    font-size: 1.5rem;
+   color: gray;
+}
+
+.cardsbreakfast img{
+    width: 250px;
+    height: 350px;
+    object-fit: fill;
+}
+.cardsbreakfast{
+   
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+   width: 300px;
+    height: 450px;
+}
+
+#breakfast-section{
+    padding: 70px;
+    background-color: #ffffff;
+    
+}
+#breakfast-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    text-decoration: none;
+}
+#breakfast-heading h1{
+    border-radius: 15px 15px 0px 0px;
+    padding-left: 10px;
+  background-color: #e0e0e0de;
+  padding-right: 160px;
+    color: rgb(142, 180, 103);
+   font-size: 3rem;
+}
+#breakfast-heading a{
+  
+   color: rgb(0, 0, 0);
+  margin-right: 20px;
+}
+#breakfast-container{
+   
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        
+        
+        }
+        #breakfast-container p{
+          
+          font-size: 1.2rem;
+          font-weight: 2rem;
+        }
+
+
+    #breakfast-card-container{
+        padding: 40px;
+        background-color: #e0e0e0de;
+    }
