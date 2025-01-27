@@ -194,6 +194,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     height: 300px;
+    padding-right: 90px;
     
 
    
@@ -223,7 +224,7 @@
 display: grid;
 grid-template-columns: repeat(4,1fr);
 grid-template-rows: repeat(2,1fr);
-
+margin-left: 70px;
 }
 .cardslatest img{
    
@@ -234,9 +235,9 @@ grid-template-rows: repeat(2,1fr);
 .cardslatest{
    
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
    width: 300px;
     height: 370px;
 }
@@ -332,7 +333,7 @@ grid-template-rows: repeat(2,1fr);
 .cardsbreakfast img{
     width: 250px;
     height: 350px;
-    object-fit: fill;
+    object-fit: cover;
 }
 .cardsbreakfast{
    
@@ -387,3 +388,541 @@ grid-template-rows: repeat(2,1fr);
         padding: 40px;
         background-color: #e0e0e0de;
     }
+    #great-food{
+        position: relative;
+        background-color: #000000;
+        height: 1000px;
+       max-width: 100%;
+
+    }
+    #text-container{
+    
+        height: 400px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #faf5de;
+        padding: 100px;
+      position: absolute;
+      left: 1150px;
+     top: 200px;
+    }
+    #img-container{
+        top: 100px;
+        width: 700px;
+        height: 800px;
+        position: relative;
+        left: 600px;
+        background-color: #ececec;
+       display: inline-block;
+    }
+    #img-container img{
+       
+        width:700px;
+    height: 800px;
+    object-fit: fill;
+    }
+    #text-container button{
+        width: 300px;
+        height: 47px;
+        margin: 10px;
+        padding: 10px;
+        background-color: rgb(200, 236, 101);
+        border-radius: 7px;
+    }
+
+    #readers-say{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        background-color: #d2d2d2e6;
+
+    }
+    #reader-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        max-width: 1200px;
+        gap: 30px;
+        margin-top: 50px;
+       
+    }
+   #reader-container :nth-child(2n){
+        margin-top: 40px;
+      }
+    .reader-cards{
+        text-align: center;
+        background-color: #ffffff;
+        border: 1px solid rgb(0, 0, 0);
+        width: 222px;
+        height: 431px;
+        padding: 20px;
+        border-radius: 20px;
+        position: relative;
+
+    }
+#reader-main-div h1{
+    font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        margin-top: 50px;  
+        color: rgb(110, 138, 10); 
+    }
+    #reader-main-div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .reader-cards p{
+        position: relative;
+        top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   .reader-cards button{
+        position: relative;
+        top: 50px;
+        width: 170px;
+        height: 40px;
+        border-radius: 15px;
+        border: 2px solid greenyellow;
+        border-color: greenyellow;
+        color: greenyellow;
+        background-color: #ffffff;
+   }
+
+   /*footer*/
+
+   #footer{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #000000;
+       color: rgb(255, 255, 255);
+       text-decoration: none;
+       flex-direction: column;
+   }
+
+
+   #the-upper-footer{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 20px;
+         flex-direction: column;
+   }
+   #the-upper-footer h1{
+    font-size: 3.5rem;
+    margin-top: 50px;
+   }
+   #the-upper-footer h6{
+    font-size: 1.5rem;
+    margin-top: 30px;
+   }
+    #the-upper-footer li{
+     font-size: 1.5rem;
+     margin-top: 30px;
+     padding: 30px;
+     color: rgb(167, 249, 43);
+     font-family: cursive;
+    }
+   #the-ul{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         list-style: none;
+   }
+
+    #the-bottom-footer{
+         display: flex;
+        
+ 
+        
+    }
+    #left-bottom-footer{
+        margin-right: 50px;
+        width: 40%;
+    }
+    #left-bottom-footer h1{
+        font-size: 2.5rem;
+       
+        margin-bottom: 40px;
+    }
+    #right-bottom-footer{
+        width : 60%;
+      
+    }
+table{
+    width: 100%;
+    color: #ffffff;
+}
+table td,tr{
+   
+    text-align: left;
+    text-decoration: none;
+   padding-top: 15px; 
+  padding-bottom: 15px;
+    
+}
+#right-bottom-footer   a{
+    font-size: 10px;
+    color: #ffffff;
+text-decoration: none;
+color: #9c9c9c;
+}
+
+
+/*media queries*/
+/*
+@media screen  and (max-width: 400px){
+    #navbar{
+     position: fixed;
+    }
+    #navbar ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    
+    #navbar ul li{
+        color: white;
+        
+        padding: 10px;
+    }
+    
+    #navbar ul li a{
+        
+        color: black;
+        text-decoration: none;
+    }
+    #socials{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #socials a{
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+    #subscribe a{
+        color: rgb(129, 184, 27);
+    }
+    
+    /* best of vegan sectin*/
+    /*
+    #bestofvegan{
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    #bestofvegan h1{
+     margin-left: 100px;
+     font-size: 3.5rem;
+    }
+    #content{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 20px;
+    }
+    
+    #content a{
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+    #container{
+        display: flex;
+       justify-content: center;
+        align-items: center;
+        background-color: #eceae0;
+       
+    }
+    #yourfirstrecepie{
+        
+        display: flex;
+       align-items: center;
+       justify-content: space-between;
+        background-color: #eceae0;
+        color: rgb(0, 0, 0);
+       
+    }
+    #left-content{
+        
+        max-width: 40%;
+        padding: 20px;
+    }
+    #right-content{
+       flex: 1;
+        display: grid; 
+        grid-template-columns: repeat(3,
+    
+} */
+
+ 
+
+
+/*  Media Query for Mobile Devices */
+@media screen and (max-width: 768px){
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#navbar{
+ 
+    display: none;
+}
+  
+
+    #bestofvegan {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       height: 80px;
+       
+    }
+
+    #bestofvegan h1 {
+       margin: 0px;
+      position: relative;
+      top: 60px;
+      right: 130px;
+      
+        font-size: 1.5rem;
+    }
+ #breakfast-section{
+     display: flex;
+     flex-direction: column;
+        justify-content: center;
+ }
+ #breakfast-section{
+    padding: 15px;
+ }
+ #breakfast-heading h1{
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+ }
+ #breakfast-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+ }
+ .cardsbreakfast{
+    width: 200px;
+    height: 300px;
+ }
+ .cardsbreakfast img{
+    width: 100%;
+    height: 70%;
+    
+ }
+ .cardsbreakfast p{
+    font-size: 0.9rem;
+
+ }
+ #breakfast-card-container{
+    padding :15px;
+    width: 100%;
+    margin-left: 0px;
+ }
+    #content {
+        visibility: hidden;
+    }
+
+    #yourfirstrecepie {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #left-content {
+       
+        
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    #left-content p{
+       margin: 0px;
+       margin-top: 30px;
+        font-size: 1.2rem;
+    }
+   #heading h1{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+   }
+
+    #right-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .cards {
+        width: 200px;
+        height: auto;
+    }
+
+    .cards img {
+        width: 100%;
+        height: auto;
+    }
+    #form-heading h1{
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    #browse {
+        padding: 20px 10px;
+    }
+
+    #list-of-category {
+        padding: 10px;
+        width: auto;
+        height: auto;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
+        
+    }
+ .categories{
+    width: 100px;
+    height: 120px;
+ }
+    .categories img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .categories a {
+        
+       left: 20px;
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+    #latest-heading h1 {
+        font-size: 2rem;
+        
+    }
+    #lastest-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .cardslatest{
+        width: 130px;
+        height:130px;
+    }
+    .cardslatest img{
+        width: 90px;
+        height: 90px;
+    }
+    .cardslatest p{
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    #containers h6{
+      text-align: center;
+      font-size: 1rem;
+    }
+    #containers h1{
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      #containers h3{
+        text-align: center;
+        font-size: 1.3rem;
+      }
+    
+    #search-recipes {
+        height: 500px;
+        padding: 10px;
+    }
+    #searchbar {
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+    }
+
+    #searchbar input {
+        margin-bottom: 20px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #searchbar button {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #great-food {
+        height: auto;
+    }
+
+    #text-container {
+        
+        width: 90%;
+        padding: 20px;
+        left: auto;
+        
+        
+    }
+
+    #img-container {
+        width: 100%;
+        height: 10px;
+        left: auto;
+      
+        background-color: transparent;
+    }
+
+    #img-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    #reader-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .reader-cards {
+        width: 80%;
+        height: auto;
+    }
+
+    #footer {
+        padding: 20px;
+    }
+
+    #the-upper-footer {
+        flex-direction: column;
+     
+    }
+}
