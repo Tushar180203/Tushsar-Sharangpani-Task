@@ -7,26 +7,28 @@
   overflow: hidden;
 }
 /*navbar*/
-
-#navbar {
+.flex-spaceBtw {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar {
   background-color: #ececec;
-  color: rgb(0, 0, 0);
+  color: #000000;
   text-decoration: none;
 }
 
 #navbar ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   list-style: none;
 }
 
 #navbar ul li {
   color: white;
-
   padding: 10px;
 }
 
@@ -34,11 +36,7 @@
   color: black;
   text-decoration: none;
 }
-#socialSites {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 #socialSites a {
   color: black;
   text-decoration: none;
@@ -53,25 +51,17 @@
 #bestOfVegan {
   width: 100vw;
   height: 250px;
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
   background-color: #000000;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-decoration: none;
 }
 #bestOfVegan h1 {
   text-wrap: wrap;
-  margin-left: 100px;
+  margin-left: 6.25rem;
   font-size: 3.5rem;
 }
 #content {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
   padding: 20px;
 }
 
@@ -80,26 +70,23 @@
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
-
   padding: 20px;
 }
+
 #container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #eceae0;
   width: 100vw;
 }
 #yourFirstRecepie {
   width: 100vw;
-
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-color: #eceae0;
-  color: rgb(0, 0, 0);
+  color: #000000;
   flex-wrap: wrap;
 }
+
 #leftContent {
   width: 40%;
   padding: 20px;
@@ -114,9 +101,8 @@
 }
 .cards {
   color: white;
-  margin-top: 10px;
+  margin: 10px 0px 0px 0px;
   padding: 0px;
-  margin-bottom: 0px;
   width: 17vw;
   height: 20vw;
 }
@@ -129,10 +115,12 @@
   height: 100%;
   object-fit: cover;
 }
+
 #leftContent h1 {
   margin: 80px 0px 0px 80px;
   font-size: 4rem;
 }
+
 #leftContent p {
   margin: 30px 0px 0px 80px;
   font-size: 1.3rem;
@@ -140,9 +128,6 @@
 
 /*form container*/
 #formContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #000000;
   height: 300px;
 }
@@ -156,33 +141,30 @@
 }
 #formContent input {
   color: black;
-  width: 300px;
-  height: 23px;
+  width: 18.75rem;
+  height: 1.4375rem;
   margin: 10px;
   padding: 10px;
   border-radius: 7px;
 }
 #formContent button {
-  width: 170px;
-  height: 47px;
+  width: 10.625rem;
+  height: 2.9375rem;
   margin: 10px;
   padding: 10px;
-  background-color: rgb(200, 236, 101);
+  background-color: #c8ec65;
   border-radius: 7px;
 }
 
 /*browseSection*/
 #browseSection {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 100px;
 }
 #browseSection h1 {
   font-size: 3.5rem;
   margin: 30px;
-  color: rgb(200, 236, 101);
+  color: #c8ec65;
 }
 #listOfCategory {
   background-color: #ececec;
@@ -190,31 +172,26 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 300px;
-
-  padding-right: 30px;
-  padding-left: 30px;
+  height: 18.75rem;
+  padding: 0px 30px 0px 30px;
   gap: 15px;
 }
+
 .categories {
-  width: 100px;
-  height: 120px;
+  width: 6.25rem;
+  height: 7.5rem;
 }
 
 .categories img {
   border-radius: 5px;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   object-fit: fill;
 }
 .categories a {
   text-decoration: none;
   color: black;
-
   padding: 10px;
-  padding-left: 20px;
-
-  padding-right: 20px;
   border-radius: 0px 0px 10px 10px;
 }
 #latestContainer {
@@ -223,6 +200,7 @@
   grid-template-rows: repeat(2, 1fr);
   margin-left: 70px;
 }
+
 .cardsLatest img {
   width: 100%;
   height: 70%;
@@ -231,9 +209,7 @@
 .cardsLatest {
   color: white;
   margin-top: 20px;
-  margin-right: 10px;
-  margin-bottom: 30px;
-
+  margin: 20px 10px 30px 0px;
   width: 20vw;
   height: 30vw;
 }
@@ -241,66 +217,57 @@
 #theLatest {
   margin: 30px;
   background-color: #ffffff;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-decoration: none;
 }
-#latestHeading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: rgb(142, 180, 103);
 
+#latestHeading {
+  color: rgb(142, 180, 103);
   text-decoration: none;
 }
 #latestHeading h1 {
   font-size: 3rem;
 }
 #latestHeading a {
-  color: rgb(0, 0, 0);
-
+  color: #000000;
   padding: 10px;
 }
 
 .cardsLatest p {
-  color: rgb(165, 207, 49);
+  color: #c8ec65;
   font-size: 1.5rem;
   font-weight: 3rem;
 }
 
 #searchRecipes {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #d4d39b;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  height: 200px;
+  height: 12.5rem;
   padding: 50px;
 }
 #containers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
+
 #searchbar input {
   position: relative;
   left: 5px;
   height: 50px;
   width: 70%;
   border-radius: 10px 0px 0px 10px;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #000000;
 }
 #searchbar button {
-  background-color: rgb(200, 236, 101);
-  height: 50px;
+  background-color: #c8ec65;
+  height: 3.125rem;
   width: 29%;
   border-radius: 0px 10px 10px 0px;
 }
 #searchbar {
-  height: 50px;
-  width: 700px;
+  height: 3.125rem;
+  width: 43.75rem;
 }
 
 #containers h6 {
@@ -323,9 +290,7 @@
   object-fit: cover;
 }
 .cardsBreakfast {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 0px;
+  margin: 10px 10px 0px 0px;
   width: 10vw;
   height: 20vw;
 }
@@ -335,10 +300,6 @@
   background-color: #ffffff;
 }
 #breakfastHeading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   text-decoration: none;
 }
 #breakfastHeading h1 {
@@ -346,11 +307,11 @@
   padding-left: 10px;
   background-color: #e0e0e0de;
   padding-right: 160px;
-  color: rgb(142, 180, 103);
+  color: #c8ec65;
   font-size: 3rem;
 }
 #breakfastHeading a {
-  color: rgb(0, 0, 0);
+  color: #000000;
   margin-right: 20px;
 }
 #breakfastContainer {
@@ -372,16 +333,13 @@
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
   background-color: #000000;
-  height: 1000px;
+  height: 62.5rem;
   width: 100vw;
 }
 #textContainer {
   grid-row: 3/8;
   grid-column: 7/8;
   z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   background-color: #faf5de;
   padding: 100px;
@@ -393,37 +351,34 @@
   grid-row: 1/10;
   position: relative;
   left: 100px;
-  margin-top: 100px;
-  margin-left: 200px;
+  margin: 100px 0px 0px 200px;
   background-color: #ececec;
   display: inline-block;
 }
+
 #imgContainer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 #textContainer button {
-  width: 300px;
-  height: 47px;
+  width: 18.75rem;
+  height: 2.9375rem;
   margin: 10px;
   padding: 10px;
-  background-color: rgb(200, 236, 101);
+  background-color: #c8ec65;
   border-radius: 7px;
 }
 
 #readersSay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 700px;
+  height: 43.75rem;
   background-color: #d2d2d2e6;
 }
 #readerContainer {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  max-width: 1200px;
+  max-width: 75rem;
   gap: 30px;
   margin-top: 50px;
 }
@@ -434,8 +389,8 @@
   text-align: center;
   background-color: #ffffff;
   border: 1px solid rgb(0, 0, 0);
-  width: 222px;
-  height: 431px;
+  width: 13.875rem;
+  height: 26.9375rem;
   padding: 20px;
   border-radius: 20px;
   position: relative;
@@ -447,10 +402,7 @@
   color: rgb(110, 138, 10);
 }
 #readerMainDiv {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 .readerCards p {
@@ -461,8 +413,8 @@
 .readerCards button {
   position: relative;
   top: 50px;
-  width: 170px;
-  height: 40px;
+  width: 10.625rem;
+  height: 2.5rem;
   border-radius: 15px;
   border: 2px solid greenyellow;
   border-color: greenyellow;
@@ -473,19 +425,13 @@
 /*footer*/
 
 #footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #000000;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-decoration: none;
   flex-direction: column;
 }
 
 #the-upper-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
   flex-direction: column;
 }
@@ -506,9 +452,6 @@
   flex-wrap: wrap;
 }
 #the-ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   list-style: none;
   flex-wrap: wrap;
 }
