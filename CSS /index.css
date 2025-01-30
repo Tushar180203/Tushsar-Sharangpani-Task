@@ -1,0 +1,551 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#main {
+  overflow: hidden;
+}
+/*navbar*/
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ececec;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li {
+  color: white;
+
+  padding: 10px;
+}
+
+#navbar ul li a {
+  color: black;
+  text-decoration: none;
+}
+#socialSites {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#socialSites a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+#subscribeUs a {
+  color: rgb(129, 184, 27);
+}
+
+/* best of vegan sectin*/
+
+#bestOfVegan {
+  width: 100vw;
+  height: 250px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+#bestOfVegan h1 {
+  text-wrap: wrap;
+  margin-left: 100px;
+  font-size: 3.5rem;
+}
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+}
+
+#content .list a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+
+  padding: 20px;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eceae0;
+  width: 100vw;
+}
+#yourFirstRecepie {
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #eceae0;
+  color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+}
+#leftContent {
+  width: 40%;
+  padding: 20px;
+}
+#rightContent {
+  width: 50%;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+}
+.cards {
+  color: white;
+  margin-top: 10px;
+  padding: 0px;
+  margin-bottom: 0px;
+  width: 17vw;
+  height: 20vw;
+}
+.cards:hover {
+  transform: translateY(-10px);
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#leftContent h1 {
+  margin: 80px 0px 0px 80px;
+  font-size: 4rem;
+}
+#leftContent p {
+  margin: 30px 0px 0px 80px;
+  font-size: 1.3rem;
+}
+
+/*form container*/
+#formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  height: 300px;
+}
+
+#headForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+#formContent input {
+  color: black;
+  width: 300px;
+  height: 23px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 7px;
+}
+#formContent button {
+  width: 170px;
+  height: 47px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(200, 236, 101);
+  border-radius: 7px;
+}
+
+/*browseSection*/
+#browseSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+#browseSection h1 {
+  font-size: 3.5rem;
+  margin: 30px;
+  color: rgb(200, 236, 101);
+}
+#listOfCategory {
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 300px;
+
+  padding-right: 30px;
+  padding-left: 30px;
+  gap: 15px;
+}
+.categories {
+  width: 100px;
+  height: 120px;
+}
+
+.categories img {
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  object-fit: fill;
+}
+.categories a {
+  text-decoration: none;
+  color: black;
+
+  padding: 10px;
+  padding-left: 20px;
+
+  padding-right: 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+#latestContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 70px;
+}
+.cardsLatest img {
+  width: 100%;
+  height: 70%;
+  object-fit: fill;
+}
+.cardsLatest {
+  color: white;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+
+  width: 20vw;
+  height: 30vw;
+}
+
+#theLatest {
+  margin: 30px;
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+#latestHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(142, 180, 103);
+
+  text-decoration: none;
+}
+#latestHeading h1 {
+  font-size: 3rem;
+}
+#latestHeading a {
+  color: rgb(0, 0, 0);
+
+  padding: 10px;
+}
+
+.cardsLatest p {
+  color: rgb(165, 207, 49);
+  font-size: 1.5rem;
+  font-weight: 3rem;
+}
+
+#searchRecipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4d39b;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  height: 200px;
+  padding: 50px;
+}
+#containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#searchbar input {
+  position: relative;
+  left: 5px;
+  height: 50px;
+  width: 70%;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+#searchbar button {
+  background-color: rgb(200, 236, 101);
+  height: 50px;
+  width: 29%;
+  border-radius: 0px 10px 10px 0px;
+}
+#searchbar {
+  height: 50px;
+  width: 700px;
+}
+
+#containers h6 {
+  font-size: 1.1rem;
+  color: gray;
+}
+#containers h1 {
+  font-size: 3rem;
+}
+#containers h3 {
+  font-size: 1.5rem;
+  color: gray;
+}
+.cardsBreakfast p {
+  font-size: 0.4rem;
+}
+.cardsBreakfast img {
+  width: 10vw;
+  height: 13vw;
+  object-fit: cover;
+}
+.cardsBreakfast {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  width: 10vw;
+  height: 20vw;
+}
+
+#breakfastSection {
+  padding: 70px;
+  background-color: #ffffff;
+}
+#breakfastHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-decoration: none;
+}
+#breakfastHeading h1 {
+  border-radius: 15px 15px 0px 0px;
+  padding-left: 10px;
+  background-color: #e0e0e0de;
+  padding-right: 160px;
+  color: rgb(142, 180, 103);
+  font-size: 3rem;
+}
+#breakfastHeading a {
+  color: rgb(0, 0, 0);
+  margin-right: 20px;
+}
+#breakfastContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+#breakfastContainer p {
+  font-size: 0.9rem;
+  font-weight: 2rem;
+}
+
+#breakfast-card-container {
+  padding: 40px;
+  background-color: #e0e0e0de;
+}
+#greatFood {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-color: #000000;
+  height: 1000px;
+  width: 100vw;
+}
+#textContainer {
+  grid-row: 3/8;
+  grid-column: 7/8;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #faf5de;
+  padding: 100px;
+  opacity: 90%;
+}
+#imgContainer {
+  z-index: 1;
+  grid-column: 1/7;
+  grid-row: 1/10;
+  position: relative;
+  left: 100px;
+  margin-top: 100px;
+  margin-left: 200px;
+  background-color: #ececec;
+  display: inline-block;
+}
+#imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#textContainer button {
+  width: 300px;
+  height: 47px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(200, 236, 101);
+  border-radius: 7px;
+}
+
+#readersSay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-color: #d2d2d2e6;
+}
+#readerContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 1200px;
+  gap: 30px;
+  margin-top: 50px;
+}
+#readerContainer :nth-child(2n) {
+  margin-top: 40px;
+}
+.readerCards {
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid rgb(0, 0, 0);
+  width: 222px;
+  height: 431px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+#readerMainDiv h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  margin-top: 50px;
+  color: rgb(110, 138, 10);
+}
+#readerMainDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.readerCards p {
+  position: relative;
+  top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.readerCards button {
+  position: relative;
+  top: 50px;
+  width: 170px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid greenyellow;
+  border-color: greenyellow;
+  color: greenyellow;
+  background-color: #ffffff;
+}
+
+/*footer*/
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  flex-direction: column;
+}
+
+#the-upper-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+}
+#the-upper-footer h1 {
+  font-size: 3.5rem;
+  margin-top: 50px;
+}
+#the-upper-footer h6 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+#the-upper-footer li {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  padding: 30px;
+  color: rgb(167, 249, 43);
+  font-family: cursive;
+  flex-wrap: wrap;
+}
+#the-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+#the-bottom-footer {
+  display: flex;
+}
+#left-bottom-footer {
+  margin-right: 50px;
+  width: 40%;
+}
+#left-bottom-footer h1 {
+  font-size: 2.5rem;
+
+  margin-bottom: 40px;
+}
+#right-bottom-footer {
+  width: 60%;
+}
+table {
+  width: 100%;
+  color: #ffffff;
+}
+table td,
+tr {
+  text-align: left;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#right-bottom-footer a {
+  font-size: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+#onlyMobile {
+  display: none;
+}
